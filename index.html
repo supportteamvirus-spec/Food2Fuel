@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Food2Fuel — Organic Waste to Biogas Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================= LANDING / COVER PAGE ============================= -->
+<div id="landing-screen" class="landing-screen">
+
+  <header class="land-nav">
+    <div class="land-nav-inner">
+      <div class="brand">
+        <span class="brand-icon">
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 19H4a1 1 0 0 1-.9-1.5l2-3.5M13.5 5.5L11 9.5M17 19h3a1 1 0 0 0 .9-1.5l-2-3.5"/><path d="M9 19h6M12 2l3 5-3 1"/></svg>
+        </span>
+        <span class="brand-name" style="color:var(--ink);">Food2Fuel</span>
+      </div>
+      <nav class="land-nav-links">
+        <a href="#problem">Why it matters</a>
+        <a href="#how">How it works</a>
+        <a href="#roles">Panels</a>
+      </nav>
+      <button type="button" class="btn btn-amber btn-sm land-get-started">Get started</button>
+    </div>
+  </header>
+
+  <!-- ---------------- Hero ---------------- -->
+  <section class="land-hero">
+    <div class="land-hero-inner">
+      <div class="land-hero-copy">
+        <span class="eyebrow">Organic waste, closed the loop</span>
+        <h1>Every scrap collected<br />becomes <em>gas and fertile ground.</em></h1>
+        <p class="land-lede">Food2Fuel routes food waste from kitchens, banquet halls, and resorts to nearby biogas plants — with a tracked pickup, a weighed handover, and a compliance record for every single batch.</p>
+        <div class="land-cta-row">
+          <button type="button" class="btn btn-amber land-get-started">
+            Get started
+            <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+          <a href="#how" class="btn btn-ghost">See how it works</a>
+        </div>
+        <div class="land-trust mono">No paperwork · Weight-based invoicing · Live tracking</div>
+      </div>
+
+      <div class="land-hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 380 380" class="loop-svg">
+          <circle cx="190" cy="190" r="140" class="loop-track" />
+          <circle cx="190" cy="190" r="140" class="loop-flow" />
+
+          <g class="loop-node" transform="translate(190,30)">
+            <circle r="30" class="loop-node-circle" />
+            <g transform="translate(-11,-11)" class="loop-node-icon"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1"/></g>
+          </g>
+          <text x="190" y="76" class="loop-label" text-anchor="middle">GENERATOR</text>
+
+          <g class="loop-node" transform="translate(350,190)">
+            <circle r="30" class="loop-node-circle" />
+            <g transform="translate(-12.5,-9)" class="loop-node-icon"><rect x="1" y="7" width="13" height="9" rx="1"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="5.5" cy="18" r="1.7"/><circle cx="17.5" cy="18" r="1.7"/></g>
+          </g>
+          <text x="350" y="238" class="loop-label" text-anchor="middle">PICKUP</text>
+
+          <g class="loop-node" transform="translate(190,350)">
+            <circle r="30" class="loop-node-circle" />
+            <g transform="translate(-12.5,-12)" class="loop-node-icon"><path d="M3 20V10l5 3V10l5 3V10l5 3v7z"/><path d="M3 20h18"/></g>
+          </g>
+          <text x="190" y="304" class="loop-label" text-anchor="middle">BIOGAS PLANT</text>
+
+          <g class="loop-node" transform="translate(30,190)">
+            <circle r="30" class="loop-node-circle" />
+            <g transform="translate(-11,-12)" class="loop-node-icon"><path d="M12 2c1 4-3 5-3 9a4 4 0 0 0 8 0c0-2-1-3-1-3s2 2 2 5a6 6 0 0 1-12 0c0-5 4-6 6-11z"/></g>
+          </g>
+          <text x="30" y="238" class="loop-label" text-anchor="middle">FUEL + SOIL</text>
+
+          <circle cx="190" cy="190" r="46" class="loop-center-circle" />
+          <g transform="translate(178,178)" class="loop-center-icon"><path d="M7 19H4a1 1 0 0 1-.9-1.5l2-3.5M13.5 5.5L11 9.5M17 19h3a1 1 0 0 0 .9-1.5l-2-3.5"/><path d="M9 19h6M12 2l3 5-3 1"/></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------- Why it matters ---------------- -->
+  <section class="land-section" id="problem">
+    <div class="land-section-inner">
+      <span class="eyebrow">Why it matters</span>
+      <h2 class="land-h2">Landfills weren't built for banquet leftovers.</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-icon">${''}<svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l5 3V10l5 3V10l5 3v7z"/><path d="M3 20h18"/></svg></span>
+          <h3>Still landfill-bound</h3>
+          <p>Most commercial food waste in India has nowhere structured to go — it ends up in landfill, rotting anaerobically instead of becoming fuel.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 4-3 5-3 9a4 4 0 0 0 8 0c0-2-1-3-1-3s2 2 2 5a6 6 0 0 1-12 0c0-5 4-6 6-11z"/></svg></span>
+          <h3>Methane, not fuel</h3>
+          <p>Left to rot, that waste releases methane — a far more potent greenhouse gas than CO₂. Routed to a biogas plant, the same waste becomes clean fuel instead.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 2h6v4H9zM8 12l3 3 5-5"/></svg></span>
+          <h3>No proof of disposal</h3>
+          <p>Generators need a verifiable record for audits and sustainability reporting — not a verbal assurance that "someone came and took it."</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6.5 12h11l2 9h-15z"/></svg></span>
+          <h3>Guesswork billing</h3>
+          <p>Without a weigh-in at the plant, invoicing is a guess. Food2Fuel bills on the actual weight received — nothing estimated after the fact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------- How it works ---------------- -->
+  <section class="land-section land-section-tinted" id="how">
+    <div class="land-section-inner">
+      <span class="eyebrow">How it works</span>
+      <h2 class="land-h2">One request. Four checkpoints. One record.</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-num">01</span>
+          <h3>Request a pickup</h3>
+          <p>A generator logs in and requests a pickup. A biogas plant and a delivery partner are routed automatically.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">02</span>
+          <h3>Track it live</h3>
+          <p>The delivery partner collects the batch and shares live location until it reaches the plant.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">03</span>
+          <h3>Weigh & invoice</h3>
+          <p>The plant weighs the batch on arrival and generates a fair, weight-based invoice on the spot.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">04</span>
+          <h3>Pay & get your record</h3>
+          <p>Payment happens in-app. Handover completes only once it's settled — and a digital compliance record is issued.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------- Roles ---------------- -->
+  <section class="land-section" id="roles">
+    <div class="land-section-inner">
+      <span class="eyebrow">One platform, three panels</span>
+      <h2 class="land-h2">Built for everyone in the chain.</h2>
+      <div class="role-cards-grid">
+        <div class="role-card">
+          <span class="role-card-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1"/></svg></span>
+          <h3>Waste generator</h3>
+          <p>Restaurants, hotels, resorts, marriage halls, and caterers request pickups, track every batch, pay invoices, and download compliance records.</p>
+        </div>
+        <div class="role-card">
+          <span class="role-card-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l5 3V10l5 3V10l5 3v7z"/><path d="M3 20h18"/></svg></span>
+          <h3>Biogas plant</h3>
+          <p>Receive routed feedstock, weigh it on arrival, generate invoices, and confirm handover once payment clears.</p>
+        </div>
+        <div class="role-card">
+          <span class="role-card-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="13" height="9" rx="1"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="5.5" cy="18" r="1.7"/><circle cx="17.5" cy="18" r="1.7"/></svg></span>
+          <h3>Delivery partner</h3>
+          <p>Pick up assigned jobs, share live location, and confirm drop-off — keeping both sides updated automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------- Feature grid ---------------- -->
+  <section class="land-section land-section-tinted">
+    <div class="land-section-inner">
+      <span class="eyebrow">What's built in</span>
+      <h2 class="land-h2">Everything the paper trail used to miss.</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><h3>Live location tracking</h3><p>See exactly where your batch is, from pickup to plant.</p></div>
+        </div>
+        <div class="feature-item">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+          <div><h3>In-app invoicing & payment</h3><p>Weight-based invoices, paid directly through the app.</p></div>
+        </div>
+        <div class="feature-item">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+          <div><h3>Digital compliance records</h3><p>A verified disposal record issued for every completed batch.</p></div>
+        </div>
+        <div class="feature-item">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="13" height="9" rx="1"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="5.5" cy="18" r="1.7"/><circle cx="17.5" cy="18" r="1.7"/></svg>
+          <div><h3>Automatic routing</h3><p>Every request is matched to a plant and a delivery partner by load.</p></div>
+        </div>
+        <div class="feature-item">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.8.3 5 2.5 5 6"/></svg>
+          <div><h3>One login, three panels</h3><p>Your phone number decides your dashboard — no passwords to remember.</p></div>
+        </div>
+        <div class="feature-item">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6.5 12h11l2 9h-15z"/></svg>
+          <div><h3>Weighed, not estimated</h3><p>Invoices are generated only after the plant weighs the batch on arrival.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------- Final CTA ---------------- -->
+  <section class="land-cta-band">
+    <div class="land-section-inner" style="text-align:center;">
+      <h2 class="land-h2" style="color:#fff;">Ready to close the loop on your waste?</h2>
+      <p style="color:#D9E2D3;max-width:480px;margin:0 auto 26px;">Join as a waste generator, a biogas plant, or a delivery partner — it takes one phone number to get started.</p>
+      <button type="button" class="btn btn-amber land-get-started">
+        Get started
+        <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <footer class="land-footer">
+    <div class="land-section-inner land-footer-inner">
+      <div class="brand">
+        <span class="brand-icon">
+          <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 19H4a1 1 0 0 1-.9-1.5l2-3.5M13.5 5.5L11 9.5M17 19h3a1 1 0 0 0 .9-1.5l-2-3.5"/><path d="M9 19h6M12 2l3 5-3 1"/></svg>
+        </span>
+        <span class="brand-name" style="font-size:16px;">Food2Fuel</span>
+      </div>
+      <span class="mono land-footer-note">Organic waste, closed the loop.</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================= AUTH SCREEN ============================= -->
+<div id="auth-screen" class="auth-screen hidden">
+  <div class="auth-card fadein">
+    <div class="auth-left">
+      <div>
+        <button type="button" class="back-link back-link-light" id="btn-back-landing">
+          <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+          <span>Back to Food2Fuel</span>
+        </button>
+        <div class="brand">
+          <span class="brand-icon">
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 19H4a1 1 0 0 1-.9-1.5l2-3.5M13.5 5.5L11 9.5M17 19h3a1 1 0 0 0 .9-1.5l-2-3.5"/><path d="M9 19h6M12 2l3 5-3 1"/></svg>
+          </span>
+          <span class="brand-name">Food2Fuel</span>
+        </div>
+        <h1>Every scrap collected becomes<br /><em>gas and fertile ground.</em></h1>
+        <p>One platform connecting kitchens, banquet halls, and resorts to nearby biogas plants — with a routed pickup, a verified handoff, and a compliance record for every batch.</p>
+      </div>
+      <div class="auth-left-features">
+        <div><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="13" height="9" rx="1"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="5.5" cy="18" r="1.7"/><circle cx="17.5" cy="18" r="1.7"/></svg><div>Live delivery partner updates</div></div>
+        <div><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg><div>Digital compliance record</div></div>
+        <div><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 4-3 5-3 9a4 4 0 0 0 8 0c0-2-1-3-1-3s2 2 2 5a6 6 0 0 1-12 0c0-5 4-6 6-11z"/></svg><div>Biogas + fertilizer output</div></div>
+      </div>
+    </div>
+
+    <div class="auth-right">
+
+      <!-- Step 1: phone number entry -->
+      <div id="step-phone">
+        <h2 class="step-title">Welcome</h2>
+        <p class="step-sub">Enter your phone number to log in — or to get started if you're new.</p>
+        <form id="phone-form">
+          <div class="field">
+            <label>Phone number</label>
+            <div class="phone-input-wrap">
+              <span class="phone-prefix">+91</span>
+              <input class="input phone-input" type="tel" id="f-phone" inputmode="numeric" maxlength="10" placeholder="98765 43210" autocomplete="tel" />
+            </div>
+          </div>
+          <div id="phone-error" class="error hidden"></div>
+          <button type="submit" class="btn btn-primary btn-block" id="btn-continue-phone">
+            Continue
+            <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Step 2: shown automatically when the number isn't registered yet -->
+      <div id="step-register" class="hidden">
+        <button type="button" class="back-link" id="btn-back-phone">
+          <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+          <span id="phone-display"></span>
+        </button>
+        <h2 class="step-title">New here — let's set you up</h2>
+        <p class="step-sub">This number isn't registered yet. Tell us which panel you're joining and a few details.</p>
+
+        <div class="role-toggle">
+          <button type="button" class="role-btn active" data-role="generator">
+            <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1"/></svg>
+            Waste generator
+          </button>
+          <button type="button" class="role-btn" data-role="plant">
+            <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l5 3V10l5 3V10l5 3v7z"/><path d="M3 20h18"/></svg>
+            Biogas plant
+          </button>
+          <button type="button" class="role-btn" data-role="delivery">
+            <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="13" height="9" rx="1"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="5.5" cy="18" r="1.7"/><circle cx="17.5" cy="18" r="1.7"/></svg>
+            Delivery partner
+          </button>
+        </div>
+
+        <p class="role-blurb" id="role-blurb"></p>
+
+        <form id="register-form">
+          <div class="field">
+            <label id="label-businessName">Business name</label>
+            <input class="input" type="text" id="f-businessName" placeholder="e.g. Sarovar Banquets" />
+          </div>
+          <div id="field-type" class="field hidden">
+            <label>Business type</label>
+            <select class="input" id="f-type">
+              <option>Restaurant</option>
+              <option>Hotel</option>
+              <option>Resort</option>
+              <option>Marriage Hall</option>
+              <option>Caterer</option>
+            </select>
+          </div>
+          <div id="field-capacity" class="field hidden">
+            <label>Processing capacity (tons/day)</label>
+            <input class="input" type="number" id="f-capacity" min="0" placeholder="e.g. 12" />
+          </div>
+          <div id="field-vehicle" class="field hidden">
+            <label>Vehicle type</label>
+            <select class="input" id="f-vehicle"></select>
+          </div>
+          <div class="field">
+            <label>Address / area</label>
+            <input class="input" type="text" id="f-address" placeholder="e.g. Sector 14, Rohtak" />
+          </div>
+
+          <div id="auth-error" class="error hidden"></div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="auth-submit-btn">
+            Create account & continue
+            <svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= APP SHELL ============================= -->
+<div id="app-shell" class="app-shell hidden">
+  <aside class="sidebar">
+    <div class="brand-sidebar">
+      <span class="brand-icon-sm">
+        <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 19H4a1 1 0 0 1-.9-1.5l2-3.5M13.5 5.5L11 9.5M17 19h3a1 1 0 0 0 .9-1.5l-2-3.5"/><path d="M9 19h6M12 2l3 5-3 1"/></svg>
+      </span>
+      <span class="brand-name-sm">LoopFeed</span>
+    </div>
+    <nav id="sidebar-nav" class="sidebar-nav"></nav>
+    <div class="sidebar-user">
+      <div id="user-name" class="user-name"></div>
+      <div id="user-sub" class="user-sub"></div>
+      <button id="logout-btn" class="btn btn-logout">
+        <svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>
+        Log out
+      </button>
+    </div>
+  </aside>
+  <main class="content">
+    <div id="content-area"></div>
+  </main>
+</div>
+
+<div id="modal-root"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
